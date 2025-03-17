@@ -32,9 +32,9 @@ export const Contact = () => {
     };
 
 
-    return <section id="contact" className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-12">
+    return <section id="contact" className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
     <RevealOnScroll>
-      <div className="w-full max-w-4xl mx-auto px-4">
+      <div className="w-full max-w-[90%] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
           Get in touch
         </h2>
@@ -82,5 +82,6 @@ export const Contact = () => {
       </div>
     </RevealOnScroll>
   </section>
+  
   
 }
