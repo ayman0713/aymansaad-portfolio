@@ -13,10 +13,11 @@ export const NavBar = ({menuOpen, setMenuOpen}) => {
                     ayman<span className=" text-blue-500">.saad</span>
                     </a>
 
-                <div className=" w-7 h-5 relative cursor-pointer z-40 md:hidden" 
-                onClick={() => setMenuOpen((prev) => !prev)}>
-                    &#9776;
-                </div>
+                    <div 
+                        className="w-10 h-8 relative cursor-pointer z-40 md:hidden text-2xl"
+                        onClick={() => setMenuOpen((prev) => !prev)}>
+                        &#9776;
+                    </div>
 
 
                 <div className=" hidden md:flex items-center space-x-8">

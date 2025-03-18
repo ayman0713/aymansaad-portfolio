@@ -33,7 +33,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                 <motion.div
                     className="fixed top-0 left-0 w-full h-[80vh] z-50 flex flex-col items-center justify-center shadow-lg backdrop-blur-md border-b border-gray-700"
                     style={{
-                        background: "linear-gradient(180deg, rgba(15,23,42,0.95), rgba(0,0,0,0.7))", // dark blue to black top-down
+                        background: "linear-gradient(180deg, rgba(15,23,42,0.95), rgba(0,0,0,0.7))",
                         boxShadow: "0px 4px 15px rgba(0,0,0,0.5)"
                     }}
                     variants={menuVariants}
