@@ -32,7 +32,7 @@ export const About = () => {
                 <p className=" text-gray-300 mb-6">
                 Coming from a criminology background, I discovered a deep passion for technology and how it shapes the world. 
                 This curiosity led me to immerse myself in coding, web development, and building real-world applications. 
-                Over the past year, I have worked on personal projects, honing my frontend skills and learning to create scalable, intuitive applications. 
+                For over a year, I have worked on personal projects, honing my frontend skills and learning to create scalable, intuitive applications. 
                 I love tackling challenges, optimizing user experiences, and continuously expanding my knowledge to build innovative solutions that make an impact.
                 </p>
 

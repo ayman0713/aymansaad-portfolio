@@ -4,13 +4,15 @@ export const Home = () => {
     return <section id="home" className=" min-h-screen flex items-center justify-center relative">
         <RevealOnScroll>
         <div className=" text-center z-10 px-4">
-            <h1 className=" text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
+            <h1 className=" text-7xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
             Hi, I'm Ayman!
             </h1>
 
-            <p className=" text-gray-300 text-lg mb-8 max-w-lg mx-auto">
-            I'm a software developer passionate about building clean, scalable, and high-performance web applications. 
-            My goal is to create efficient solutions that not only function seamlessly but also provide an exceptional user experience.
+            <p className=" text-gray-300 text-xl mb-8 max-w-lg mx-auto">
+            I am a frontend developer specializing in building clean, scalable, and high-performance web applications, with a deep passion for delivering exceptional user experiences. 
+            My expertise lies in creating intuitive and engaging interfaces that prioritize usability and performance. 
+            While frontend development and user experience design are my primary focus, I also have solid experience in full stack development. 
+            This allows me to contribute effectively across the entire development lifecycle, ensuring cohesive, end-to-end solutions that align both frontend excellence and backend robustness.
             </p>
             <div className=" flex justify-center space-x-4">
                 <a href="#projects" 
