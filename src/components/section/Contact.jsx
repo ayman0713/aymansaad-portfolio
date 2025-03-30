@@ -32,10 +32,10 @@ export const Contact = () => {
     };
 
 
-    return <section id="contact" className="min-h-screen flex flex-col justify-evenly py-12 px-4 sm:px-6 lg:px-16 xl:px-24">
+    return <section id="contact" className="min-h-screen flex flex-col justify-evenly py-12 px-4 sm:px-6 lg:px-16 xl:px-24 mt-20">
     <RevealOnScroll>
     <div className="w-full max-w-2xl lg:max-w-xl xl:max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-700 to-white bg-clip-text text-transparent">
           Get in touch
         </h2>
         <form className="space-y-8" onSubmit={handleSubmit}>
@@ -45,7 +45,7 @@ export const Contact = () => {
               name="name"
               required
               value={formData.name}
-              className="w-full bg-white/5 border border-white/10 rounded px-6 py-4 text-white focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full bg-white/5 border border-white/30 rounded px-6 py-4 text-white focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
               placeholder="Name..."
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             />
@@ -56,7 +56,7 @@ export const Contact = () => {
               name="email"
               required
               value={formData.email}
-              className="w-full bg-white/5 border border-white/10 rounded px-6 py-4 text-white focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full bg-white/5 border border-white/30 rounded px-6 py-4 text-white focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
               placeholder="example@gmail.com"
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             />
@@ -67,17 +67,18 @@ export const Contact = () => {
               required
               value={formData.message}
               rows={6}
-              className="w-full bg-white/5 border border-white/10 rounded px-6 py-4 text-white focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full bg-white/5 border border-white/30 rounded px-6 py-4 text-white focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
               placeholder="Your message..."
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             />
           </div>
           <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-4 px-6 rounded font-medium transition relative hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] cursor-pointer"
-          >
-            Send Message
-          </button>
+  type="submit"
+  className="w-full bg-gradient-to-r bg-blue-500 text-white py-4 px-6 rounded font-medium transition relative hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] cursor-pointer"
+>
+  Send Message
+</button>
+
         </form>
       </div>
     </RevealOnScroll>

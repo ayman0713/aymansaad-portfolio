@@ -1,4 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     const menuVariants = {
@@ -69,6 +71,45 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                             ></span>
                         </motion.a>
                     ))}
+
+                    <motion.div
+                        className="flex space-x-8 mt-8"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0, transition: { delay: links.length * 0.1 } }}
+                        exit={{ opacity: 0, y: 20, transition: { duration: 0.2 } }}
+                    >
+                        <div className="relative group">
+                            <a 
+                                href="https://github.com/yourusername"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-3xl hover:text-gray-300 transition-transform group-hover:scale-110"
+                            >
+                                <FontAwesomeIcon icon={faGithub} />
+                            </a>
+                            <span 
+                                className="absolute inset-0 rounded-full blur-md opacity-70 scale-90 
+                                           bg-blue-500 transition duration-300 ease-in-out pointer-events-none 
+                                           group-hover:scale-100 group-hover:opacity-100"
+                            ></span>
+                        </div>
+
+                        <div className="relative group">
+                            <a 
+                                href="https://www.linkedin.com/in/yourusername/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-3xl hover:text-gray-300 transition-transform group-hover:scale-110"
+                            >
+                                <FontAwesomeIcon icon={faLinkedin} />
+                            </a>
+                            <span 
+                                className="absolute inset-0 rounded-full blur-md opacity-70 scale-90 
+                                           bg-blue-500 transition duration-300 ease-in-out pointer-events-none 
+                                           group-hover:scale-100 group-hover:opacity-100"
+                            ></span>
+                        </div>
+                    </motion.div>
                 </motion.div>
             )}
         </AnimatePresence>
